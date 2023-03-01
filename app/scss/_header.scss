@@ -1,0 +1,51 @@
+.header{
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0.8rem;
+
+
+    &__logo{
+
+        &--center{
+            display: block;
+            margin: auto;
+        }
+    
+    }
+
+
+    &__navigation{
+        text-align: center;
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            justify-content: center;
+            align-items: center;
+
+            @media screen and (min-width: 800px) {
+                flex-direction: row;
+            }
+
+            li{
+                padding: 0;
+
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    transition: 350ms ease-in-out;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        color: $accent;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

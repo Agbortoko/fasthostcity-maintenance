@@ -1,0 +1,45 @@
+.footer{
+
+    color: $white;
+    padding: 1rem;
+
+    section{
+
+        max-width: 80%;
+        margin: auto;
+        text-align: center;
+        
+        p{
+            span{
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+        }
+    }
+
+
+    &__navigation{
+
+        ul{
+            list-style-type: none;
+            li{
+                padding: 0;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    text-transform: uppercase;
+                    transition: 350ms ease-in-out;
+
+                    &:hover{
+                        color: $accent;
+                        text-decoration: underline;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}
